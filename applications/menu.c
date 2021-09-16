@@ -214,10 +214,9 @@ DIR *dirp = RT_NULL;
 struct dirent *d = RT_NULL;
 void playlists(int8_t* state_addr)
 {
-    int8_t i = 0;
+    int8_t   i = 0;
     uint8_t  j = 0;
     uint8_t  k = 2;
-    //song_info.songs_num = 16;
 
     if(*state_addr < 0)  *state_addr = song_info.songs_num-1; //第一首往上按到达末尾
     if(*state_addr >= song_info.songs_num)  *state_addr = 0;  //最后一首往下按到第一首
