@@ -20,6 +20,7 @@ int music_num_get(void)
     while(dirp == RT_NULL)
     {
         dirp = opendir("/music");
+        rt_thread_mdelay(500);
     };
 
     if (dirp == RT_NULL)

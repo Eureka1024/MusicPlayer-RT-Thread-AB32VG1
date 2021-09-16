@@ -61,6 +61,8 @@ applications/mnt.o: ../applications/mnt.c \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\libraries\hal_libraries\ab32vg1_hal\include/ab32vg1_hal_tim.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\libraries\hal_libraries\ab32vg1_hal\include/ab32vg1_hal_rtc.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\libraries\hal_libraries\ab32vg1_hal\include/ab32vg1_hal_adc.h \
+ ../applications/common.h ../applications/oled_iic.h \
+ D\:\music_player_AB32VG1\AB32VG1MusicPlayer\packages\wavplayer-latest\inc/wavplayer.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtdbg.h
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rtconfig_preinc.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtthread.h:
@@ -124,4 +126,7 @@ D\:\music_player_AB32VG1\AB32VG1MusicPlayer\libraries\hal_libraries\ab32vg1_hal\
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\libraries\hal_libraries\ab32vg1_hal\include/ab32vg1_hal_tim.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\libraries\hal_libraries\ab32vg1_hal\include/ab32vg1_hal_rtc.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\libraries\hal_libraries\ab32vg1_hal\include/ab32vg1_hal_adc.h:
+../applications/common.h:
+../applications/oled_iic.h:
+D\:\music_player_AB32VG1\AB32VG1MusicPlayer\packages\wavplayer-latest\inc/wavplayer.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtdbg.h:
