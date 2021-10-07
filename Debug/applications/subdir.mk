@@ -5,6 +5,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../applications/button.c \
+../applications/control.c \
 ../applications/main.c \
 ../applications/menu.c \
 ../applications/mnt.c \
@@ -14,6 +15,7 @@ C_SRCS += \
 
 OBJS += \
 ./applications/button.o \
+./applications/control.o \
 ./applications/main.o \
 ./applications/menu.o \
 ./applications/mnt.o \
@@ -23,6 +25,7 @@ OBJS += \
 
 C_DEPS += \
 ./applications/button.d \
+./applications/control.d \
 ./applications/main.d \
 ./applications/menu.d \
 ./applications/mnt.d \

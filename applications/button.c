@@ -22,9 +22,6 @@ static struct button btn_0;
 static struct button btn_1;
 static struct button btn_2;
 
-/* 事件控制块 */
-struct rt_event sys_event;
-
 void saia_channels_set(uint8_t channels);
 void saia_volume_set(rt_uint8_t volume);
 uint8_t saia_volume_get(void);
@@ -53,7 +50,7 @@ static void button_0_callback(void *btn) //pre
     switch(btn_event_val)
     {
         case SINGLE_CLICK:
-            rt_event_send(&sys_event, BUTTON_PRE_FLAG);
+            rt_event_send(&control_event, UP_FLAG);
             break;
 
         case DOUBLE_CLICK:
@@ -73,11 +70,11 @@ static void button_1_callback(void *btn)//entry
     switch(btn_event_val)
     {
         case SINGLE_CLICK:
-            rt_event_send(&sys_event, BUTTON_ENTRY_FLAG);
+            rt_event_send(&control_event, ENTRY_FLAG);
             break;
 
         case DOUBLE_CLICK:
-            rt_event_send(&sys_event, BUTTON_2ENTRY_FLAG);
+            rt_event_send(&control_event, RETURN_FLAG);
             break;
 
         default:
@@ -95,7 +92,7 @@ static void button_2_callback(void *btn)//next
     switch(btn_event_val)
     {
         case SINGLE_CLICK:
-            rt_event_send(&sys_event, BUTTON_NEXT_FLAG);
+            rt_event_send(&control_event, DOWN_FLAG);
             break;
 
         case DOUBLE_CLICK:
@@ -149,8 +146,6 @@ static int multi_button_ctrl(void)
     button_attach(&btn_2, SINGLE_CLICK,     button_2_callback);
     button_attach(&btn_2, DOUBLE_CLICK,     button_2_callback);
     button_start (&btn_2);
-
-    rt_event_init(&sys_event, "sys_event", RT_IPC_FLAG_FIFO);
 
     return RT_EOK;
 }

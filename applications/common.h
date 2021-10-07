@@ -15,14 +15,13 @@
 #include <dfs_posix.h> /* 当需要使用文件操作时，需要包含这个头文件 */
 #include <rthw.h>
 
-/* 按键事件 */
-#define BUTTON_PRE_FLAG    (1 << 0)
-#define BUTTON_ENTRY_FLAG  (1 << 1)
-#define BUTTON_2ENTRY_FLAG (1 << 2)
-#define BUTTON_NEXT_FLAG   (1 << 3)
+/* 功能控制事件 */
+#define UP_FLAG     (1 << 0)
+#define ENTRY_FLAG  (1 << 1)
+#define RETURN_FLAG (1 << 2)
+#define DOWN_FLAG   (1 << 3)
 
-//#define SD_MOUNT_SUCCESS_FLAG   (1 << 4)
-extern struct rt_event sys_event; /*系统事件*/
+extern struct rt_event control_event; //功能控制事件
 
 struct SONG_INFO
 {

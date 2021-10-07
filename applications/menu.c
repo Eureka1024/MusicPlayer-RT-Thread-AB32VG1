@@ -71,14 +71,14 @@ static void menu_thread_entry(void *parameter)
 
     while(1)
     {
-        if (rt_event_recv(&sys_event,
-                           (BUTTON_PRE_FLAG | BUTTON_ENTRY_FLAG | BUTTON_2ENTRY_FLAG | BUTTON_NEXT_FLAG),
+        if (rt_event_recv(&control_event,
+                           (UP_FLAG | ENTRY_FLAG | RETURN_FLAG | DOWN_FLAG),
                            RT_EVENT_FLAG_OR,
                            RT_WAITING_FOREVER, &e) == RT_EOK)
         {
             //按键 PRE
-            if (rt_event_recv(&sys_event,
-                               BUTTON_PRE_FLAG,
+            if (rt_event_recv(&control_event,
+                               UP_FLAG,
                                RT_EVENT_FLAG_AND | RT_EVENT_FLAG_CLEAR,
                                RT_WAITING_NO, &e) == RT_EOK)
             {
@@ -87,8 +87,8 @@ static void menu_thread_entry(void *parameter)
             }
 
             //按键 ENTRY
-            if (rt_event_recv(&sys_event,
-                               BUTTON_ENTRY_FLAG,
+            if (rt_event_recv(&control_event,
+                               ENTRY_FLAG,
                                RT_EVENT_FLAG_AND | RT_EVENT_FLAG_CLEAR,
                                RT_WAITING_NO, &e) == RT_EOK)
             {
@@ -112,8 +112,8 @@ static void menu_thread_entry(void *parameter)
             }
 
              //按键 ENTRY double click
-             if (rt_event_recv(&sys_event,
-                                BUTTON_2ENTRY_FLAG,
+             if (rt_event_recv(&control_event,
+                                RETURN_FLAG,
                                 RT_EVENT_FLAG_AND | RT_EVENT_FLAG_CLEAR,
                                 RT_WAITING_NO, &e) == RT_EOK)
              {
@@ -123,8 +123,8 @@ static void menu_thread_entry(void *parameter)
 
 
             //按键 NEXT
-            if (rt_event_recv(&sys_event,
-                               BUTTON_NEXT_FLAG,
+            if (rt_event_recv(&control_event,
+                               DOWN_FLAG,
                                RT_EVENT_FLAG_AND | RT_EVENT_FLAG_CLEAR,
                                RT_WAITING_NO, &e) == RT_EOK)
             {
