@@ -14,7 +14,7 @@
 #include "wavplayer.h"
 #include "common.h"
 
-#define UP_BUTTON_PIN    rt_pin_get("PA.0")
+#define UP_BUTTON_PIN    rt_pin_get("PA.2")
 #define ENTRY_BUTTON_PIN rt_pin_get("PF.0")
 #define DOWN_BUTTON_PIN  rt_pin_get("PF.1")
 
