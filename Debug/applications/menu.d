@@ -27,6 +27,9 @@ applications/menu.o: ../applications/menu.c \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/ipc/poll.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/ipc/ringblk_buf.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/serial.h \
+ D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/i2c.h \
+ D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/i2c_dev.h \
+ D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/i2c-bit-ops.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/mmcsd_core.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/mmcsd_host.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/mmcsd_card.h \
@@ -42,7 +45,8 @@ applications/menu.o: ../applications/menu.c \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\dfs\include/dfs_file.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\dfs\include/dfs.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\dfs\include/dfs_fs.h \
- D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rthw.h
+ D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rthw.h \
+ D\:\music_player_AB32VG1\AB32VG1MusicPlayer\packages\PAJ7620-latest\src/paj7620.h
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rtconfig_preinc.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtthread.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtdebug.h:
@@ -72,6 +76,9 @@ D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/ipc/poll.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/ipc/ringblk_buf.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/serial.h:
+D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/i2c.h:
+D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/i2c_dev.h:
+D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/i2c-bit-ops.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/mmcsd_core.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/mmcsd_host.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/mmcsd_card.h:
@@ -88,3 +95,4 @@ D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\dfs\include/dfs
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\dfs\include/dfs.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\dfs\include/dfs_fs.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rthw.h:
+D\:\music_player_AB32VG1\AB32VG1MusicPlayer\packages\PAJ7620-latest\src/paj7620.h:

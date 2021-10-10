@@ -1,6 +1,7 @@
-rt-thread/components/dfs/src/dfs.o: ../rt-thread/components/dfs/src/dfs.c \
+rt-thread/components/drivers/i2c/i2c-bit-ops.o: \
+ ../rt-thread/components/drivers/i2c/i2c-bit-ops.c \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rtconfig_preinc.h \
- D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\dfs\include/dfs.h \
+ D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/rtdevice.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtthread.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtdebug.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtdef.h \
@@ -17,7 +18,6 @@ rt-thread/components/dfs/src/dfs.o: ../rt-thread/components/dfs/src/dfs.c \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtservice.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtm.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\finsh/finsh_api.h \
- D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/rtdevice.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/ipc/ringbuffer.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/ipc/completion.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/ipc/dataqueue.h \
@@ -40,15 +40,9 @@ rt-thread/components/dfs/src/dfs.o: ../rt-thread/components/dfs/src/dfs.c \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/pin.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/audio.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\audio/audio_pipe.h \
- D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\dfs\include/dfs_fs.h \
- D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\dfs\include/dfs_file.h \
- D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\dfs\include/dfs_private.h \
- D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtdbg.h \
- D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\libc\compilers\newlib/libc.h \
- D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\finsh/finsh.h \
- D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\finsh/finsh_api.h
+ D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtdbg.h
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rtconfig_preinc.h:
-D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\dfs\include/dfs.h:
+D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/rtdevice.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtthread.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtdebug.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtdef.h:
@@ -65,7 +59,6 @@ D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/libc/libc_stdio.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtservice.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtm.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\finsh/finsh_api.h:
-D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/rtdevice.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/ipc/ringbuffer.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/ipc/completion.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/ipc/dataqueue.h:
@@ -88,10 +81,4 @@ D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/pin.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/audio.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\audio/audio_pipe.h:
-D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\dfs\include/dfs_fs.h:
-D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\dfs\include/dfs_file.h:
-D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\dfs\include/dfs_private.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\include/rtdbg.h:
-D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\libc\compilers\newlib/libc.h:
-D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\finsh/finsh.h:
-D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\finsh/finsh_api.h:

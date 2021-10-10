@@ -14,6 +14,7 @@
 #include <wavplayer.h>
 #include <dfs_posix.h> /* 当需要使用文件操作时，需要包含这个头文件 */
 #include <rthw.h>
+#include "paj7620.h"
 
 /* 功能控制事件 */
 #define UP_FLAG     (1 << 0)
@@ -22,6 +23,7 @@
 #define DOWN_FLAG   (1 << 3)
 
 extern struct rt_event control_event; //功能控制事件
+
 
 struct SONG_INFO
 {

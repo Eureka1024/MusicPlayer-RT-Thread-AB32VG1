@@ -32,13 +32,13 @@ int music_num_get(void)
         /* 读取目录 */
         while ((d = readdir(dirp)) != RT_NULL)
         {
-            rt_kprintf("found %s\n", d->d_name);
+//            rt_kprintf("found %s\n", d->d_name);
             num++;
         }
         /* 关闭目录 */
         closedir(dirp);
     }
-    rt_kprintf("i = %d\n",num);
+ //   rt_kprintf("i = %d\n",num);
 
     return num;
 }

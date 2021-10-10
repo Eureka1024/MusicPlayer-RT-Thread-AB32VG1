@@ -28,12 +28,15 @@ libraries/hal_drivers \
 libraries/hal_libraries/ab32vg1_hal/source \
 libraries/hal_libraries/bmsis/source \
 packages/MultiButton-v1.1.0 \
+packages/PAJ7620-latest/examples \
+packages/PAJ7620-latest/src \
 packages/optparse-latest \
 packages/wavplayer-latest/src \
 rt-thread/components/dfs/filesystems/devfs \
 rt-thread/components/dfs/filesystems/elmfat \
 rt-thread/components/dfs/src \
 rt-thread/components/drivers/audio \
+rt-thread/components/drivers/i2c \
 rt-thread/components/drivers/misc \
 rt-thread/components/drivers/sdio \
 rt-thread/components/drivers/serial \

@@ -111,6 +111,8 @@
 #define RT_PIPE_BUFSZ 512
 #define RT_USING_SERIAL
 #define RT_SERIAL_RB_BUFSZ 64
+#define RT_USING_I2C
+#define RT_USING_I2C_BITOPS
 #define RT_USING_PIN
 #define RT_USING_SDIO
 #define RT_SDIO_STACK_SIZE 512
@@ -198,6 +200,10 @@
 #define PKG_WP_USING_PLAY
 #define PKG_WP_PLAY_DEVICE "sound0"
 #define PKG_USING_WAVPLAYER_LATEST_VERSION
+
+/* U8G2: a monochrome graphic library */
+
+/* end of U8G2: a monochrome graphic library */
 /* end of multimedia packages */
 
 /* tools packages */
@@ -218,6 +224,9 @@
 /* peripheral libraries and drivers */
 
 #define SDIO_MAX_FREQ 24000000
+#define PKG_USING_PAJ7620
+#define PAJ7620_USING_SAMPLES
+#define PKG_USING_PAJ7620_LATEST_VERSION
 /* end of peripheral libraries and drivers */
 
 /* AI packages */
@@ -259,6 +268,12 @@
 #define BSP_USING_UART0
 #define BSP_UART0_FIFO_SIZE 10
 #define BSP_USING_SDIO
+#define BSP_USING_I2C1
+
+/* Notice: PE3 --> 16; PE2 --> 15 */
+
+#define BSP_I2C1_SCL_PIN 16
+#define BSP_I2C1_SDA_PIN 15
 /* end of On-chip Peripheral Drivers */
 
 /* Board extended module Drivers */

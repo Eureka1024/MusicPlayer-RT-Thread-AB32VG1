@@ -29,6 +29,9 @@ applications/test.o: ../applications/test.c \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/ipc/poll.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/ipc/ringblk_buf.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/serial.h \
+ D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/i2c.h \
+ D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/i2c_dev.h \
+ D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/i2c-bit-ops.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/mmcsd_core.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/mmcsd_host.h \
  D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/mmcsd_card.h \
@@ -70,6 +73,9 @@ D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/ipc/poll.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/ipc/ringblk_buf.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/serial.h:
+D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/i2c.h:
+D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/i2c_dev.h:
+D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/i2c-bit-ops.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/mmcsd_core.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/mmcsd_host.h:
 D\:\music_player_AB32VG1\AB32VG1MusicPlayer\rt-thread\components\drivers\include/drivers/mmcsd_card.h:
