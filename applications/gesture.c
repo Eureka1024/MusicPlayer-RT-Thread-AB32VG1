@@ -18,9 +18,9 @@ char *gesture_string1[] =
     "right",
     "forward",
     "backward",
-    "clockwise",
-    "anticlockwise",
-    "wave",
+    "clockwise", //顺时针
+    "anticlockwise", //逆时针
+    "wave", //挥手
 };
 
 /**

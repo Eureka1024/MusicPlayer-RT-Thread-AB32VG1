@@ -24,7 +24,7 @@
 #define Y_WIDTH     64
 //---- OLED IIC 端口定义----------------
 #define SDA_PIN rt_pin_get("PA.2")
-#define SCL_PIN rt_pin_get("PA.3")
+#define SCL_PIN rt_pin_get("PA.0")
 
 #define OLED_SCLK_Clr() rt_pin_write(SCL_PIN, PIN_LOW)
 #define OLED_SCLK_Set() rt_pin_write(SCL_PIN, PIN_HIGH)
