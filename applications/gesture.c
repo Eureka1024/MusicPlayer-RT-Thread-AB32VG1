@@ -50,7 +50,7 @@ static int my_paj7620_init(void)
 {
     rt_thread_t thread = RT_NULL;
 
-    paj7620_dev = paj7620_init("i2c1"); //挂载在 i2c 总线上
+    paj7620_dev = paj7620_init("i2c1"); //挂载在 i2c1 总线上
 
     thread = rt_thread_create("paj7620", paj7620_entry, RT_NULL, 1024, 20, 1);
 
@@ -62,4 +62,4 @@ static int my_paj7620_init(void)
 
     return RT_EOK;
 }
-INIT_APP_EXPORT(my_paj7620_init);
+//INIT_APP_EXPORT(my_paj7620_init);

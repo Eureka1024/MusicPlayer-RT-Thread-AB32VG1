@@ -63,7 +63,7 @@ Menu_table  table[]=
 void (*current_operation_index)(void);   //当前状态操作函数
 uint8_t  func_index = 0;                 //当前状态
 
-/* 超时函数 */
+/* 菜单界面显示线程入口函数 */
 static void menu_thread_entry(void *parameter)
 {
     rt_uint32_t e;
@@ -76,7 +76,7 @@ static void menu_thread_entry(void *parameter)
                            RT_EVENT_FLAG_OR,
                            RT_WAITING_FOREVER, &e) == RT_EOK)
         {
-            //按键 PRE
+            //向上
             if (rt_event_recv(&control_event,
                                UP_FLAG,
                                RT_EVENT_FLAG_AND | RT_EVENT_FLAG_CLEAR,
@@ -86,7 +86,7 @@ static void menu_thread_entry(void *parameter)
                 table[func_index].enter_operation(&table[func_index].sub_offset_addr);
             }
 
-            //按键 ENTRY
+            //确定
             if (rt_event_recv(&control_event,
                                ENTRY_FLAG,
                                RT_EVENT_FLAG_AND | RT_EVENT_FLAG_CLEAR,
@@ -111,7 +111,7 @@ static void menu_thread_entry(void *parameter)
                 }
             }
 
-             //按键 ENTRY double click
+             //返回
              if (rt_event_recv(&control_event,
                                 RETURN_FLAG,
                                 RT_EVENT_FLAG_AND | RT_EVENT_FLAG_CLEAR,
@@ -122,7 +122,7 @@ static void menu_thread_entry(void *parameter)
              }
 
 
-            //按键 NEXT
+            //向下
             if (rt_event_recv(&control_event,
                                DOWN_FLAG,
                                RT_EVENT_FLAG_AND | RT_EVENT_FLAG_CLEAR,
@@ -142,12 +142,9 @@ static rt_thread_t menu_tid = RT_NULL;
 int menuGUI_thread_init(void)
 {
     int8_t i = 0;
-    OLED_Init();            //初始化OLED
+    OLED_Init(); //初始化OLED
     OLED_Clear();
     load_menu(&i);
-
-    //song_info.songs_num = music_num_get();
-    song_info.songs_num = 16;
 
     menu_tid = rt_thread_create("menu_thread",
                             menu_thread_entry,
