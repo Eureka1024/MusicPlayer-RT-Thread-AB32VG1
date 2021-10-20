@@ -1,0 +1,22 @@
+[
+ {
+  "path": "/packages/multimedia/wavplayer", 
+  "ver": "latest", 
+  "name": "WAVPLAYER"
+ }, 
+ {
+  "path": "/packages/peripherals/PAJ7620", 
+  "ver": "latest", 
+  "name": "PAJ7620"
+ }, 
+ {
+  "path": "/packages/misc/optparse", 
+  "ver": "latest", 
+  "name": "OPTPARSE"
+ }, 
+ {
+  "path": "/packages/misc/MultiButton", 
+  "ver": "v1.1.0", 
+  "name": "MULTIBUTTON"
+ }
+]

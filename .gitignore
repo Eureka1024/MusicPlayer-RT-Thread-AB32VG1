@@ -8,6 +8,7 @@
 *.old
 *.o
 
+Debug
 build
 dist
-packages
+
