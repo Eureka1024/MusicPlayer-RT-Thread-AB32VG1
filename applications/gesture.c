@@ -62,4 +62,4 @@ static int my_paj7620_init(void)
 
     return RT_EOK;
 }
-//INIT_APP_EXPORT(my_paj7620_init);
+INIT_APP_EXPORT(my_paj7620_init);

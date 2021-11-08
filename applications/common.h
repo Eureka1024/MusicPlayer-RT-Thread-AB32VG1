@@ -16,14 +16,13 @@
 #include <rthw.h>
 #include "paj7620.h"
 
-/* 功能控制事件 */
+/* 按键事件 */
 #define UP_FLAG     (1 << 0)
 #define ENTRY_FLAG  (1 << 1)
 #define RETURN_FLAG (1 << 2)
 #define DOWN_FLAG   (1 << 3)
 
 extern struct rt_event control_event; //功能控制事件
-
 
 struct SONG_INFO
 {
